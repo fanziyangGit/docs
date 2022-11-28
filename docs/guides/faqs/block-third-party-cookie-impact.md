@@ -8,7 +8,7 @@
 
 从 13.1 版本开始，Safari 默认会**阻止第三方 Cookie**，会影响 Authing 的某些**单点登录功能**。其他类似的更新，从 Chrome 83 版本开始，**隐身模式**下默认禁用第三方 Cookie。其他浏览器也在慢慢进行此类更新以保护用户隐私。很多浏览器将禁用第三方 Cookie 作为了一个安全配置功能。
 
-如果你使用 Authing 托管的登录页面的话不会受此类问题影响。自行托管登录页面以及**使用 trackSession 功能**的用户会受到影响。因为请求 Authing API 的时需要**跨域携带 Authing 相关的 Cookie**。
+如果你使用 Authing 托管的登录页面的话不会受此类问题影响。自行托管登录页面以及**使用 trackSession 功能**的用户会受到影响。因为请求 Authing API 时需要**跨域携带 Authing 相关的 Cookie**。
 
 在浏览器发送需要携带 Cookie 的跨域请求时，浏览器会拦截 Cookie，因为用户访问的域名和 Authing 的域名不[同源](http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html)。
 
